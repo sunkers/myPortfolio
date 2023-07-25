@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
+
+$header-font: 'Be Vietnam Pro', sans-serif;
+$transition-style: .3s cubic-bezier(.4,.4,0,1);
+
+.header {
+  --s-font: $header-font;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: $header-font;
+  line-height: 1;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  transition: $transition-style;
+  word-spacing: 1px;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 60px;
+  justify-content: space-between;
+  margin: 0px 20px 0px;
+  transition-duration: 1000ms;
+  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+}
+
+.name {
+  --s-font: $header-font;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: $transition-style;
+  word-spacing: 1px;
+  flex: none;
+  flex-wrap: nowrap;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  color: #000000;
+  font-family: var(--s-font);
+  font-size: 17px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.38em;
+  line-height: 1.4;
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.menu {
+  --s-font: $header-font;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: $header-font;
+  line-height: 1;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+  transition: $transition-style;
+  word-spacing: 1px;
+  display: flex;
+  flex: none;
+  max-width: 100%;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0px;
+}

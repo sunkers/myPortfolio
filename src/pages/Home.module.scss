@@ -1,0 +1,31 @@
+.container {
+    --s-font-ecbb00d0: 'Be Vietnam Pro';
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    border: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    transition: .3s cubic-bezier(.4,.4,0,1);
+    word-spacing: 1px;
+    display: flex;
+    pointer-events: all;
+    position: relative;
+    z-index: 0;
+    align-content: flex-start;
+    align-items: flex-start;
+    background: rgba(0,0,0,0.0);
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    width: 1160px;
+    margin: 35px 20px 0px;
+    max-width: calc(100% - 40px);
+  }
+  
