@@ -1,0 +1,52 @@
+.sd {
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1;
+    display: flex;
+    flex: none;
+    justify-content: space-between;
+    transition-duration: 1000ms;
+    width: 100%;
+    max-width: 100%;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.sd .richText {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: block;
+    word-break: break-word;
+    color: #000000;
+    font-family: var(--s-font-ecbb00d0);
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    text-align: left;
+    flex: 1;
+    width: auto;
+    margin: 0;
+    max-width: 100%;
+}
+
+.sd .appear {
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.0);
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-end;
+    width: auto;
+    margin: 20px 0 0;
+    max-width: 100%;
+}

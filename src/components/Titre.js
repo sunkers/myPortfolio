@@ -1,7 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import {sd, richText, appear, iconContainer} from './Titre.module.scss'
+import {iconContainer} from './Titre.module.scss'
+import {sd, richText, appear} from './base.module.scss'
+
 
 const Titre = () => {
     return (
