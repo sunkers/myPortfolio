@@ -22,6 +22,20 @@ const Experience = () => {
           <p className={descriptionText}>Développement d'une application web de gestion de projet en Angular et Symfony</p>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <div className={experienceRow}>
+        <div className={expTitle}>
+          <p className={company}>Nova Blocks</p>
+          <div className={post}>
+            <p className={postDate}>2020 — 2022</p>
+            <p className={postName}>Fondateur</p>
+          </div>
+        </div>
+        <div className={experienceDescription}>
+          <p className={descriptionText}>En fondant un site éducatif sur la blockchain, j'ai démontré mon expertise technique, mes compétences entrepreneuriales et ma passion pour rendre la technologie accessible à tous.</p>
+        </div>
+      </div>
     </div>
   </div>
   )

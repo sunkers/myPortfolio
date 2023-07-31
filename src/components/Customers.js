@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hobbies = () => {
+const Customers = () => {
   return (
     <section>
       {/* Votre code pour les hobbies ici */}
@@ -8,4 +8,4 @@ const Hobbies = () => {
   )
 }
 
-export default Hobbies
+export default Customers
