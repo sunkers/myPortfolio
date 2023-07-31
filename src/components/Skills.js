@@ -38,7 +38,7 @@ const Skills = () => {
     <div className={skillsRow}>
       <div className={skillsSubRow}>
         <div className={skillsName}>
-          <p className={skillsNameText}>Base de Données [PostGre]</p>
+          <p className={skillsNameText}>Base de Données <br></br>[PostGre]</p>
         </div>
         <div className={skillsLevel}>
           <p className={skillsLevelText}>60%</p>
