@@ -1,5 +1,5 @@
 import React from "react"
-import { container } from "./Home.module.scss"
+import { container, container2, experience } from "./Home.module.scss"
 import Header from "../components/Header"
 import Intro from "../components/Intro"
 import Titre from "../components/Titre"
@@ -15,14 +15,18 @@ export default function Home() {
     <div>
       <Header />
       <div className={container}>
-        <Intro />
         <Titre />
-        <Experience />
-        <Education />
-        <Skills />
-        <Projects />
-        <Hobbies />
-        <Footer />
+        <div className={container2}>
+          <Intro />
+          <div className={experience}>
+            <Experience />
+            <Education />
+            <Skills />
+            <Projects />
+            <Hobbies />
+          </div>
+          <Footer />
+        </div>
       </div>
     </div>
   )
