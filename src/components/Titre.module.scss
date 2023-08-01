@@ -15,7 +15,6 @@
 }
 
 .TitleContainer{
-    --s-font-ecbb00d0: 'Be Vietnam Pro';
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
     border: 0;
@@ -26,7 +25,7 @@
     list-style: none;
     margin: 0;
     text-decoration: none;
-    transition: .3s cubic-bezier(.4,.4,0,1);
+    transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
     word-spacing: 1px;
     display: flex;
     pointer-events: all;
@@ -40,8 +39,15 @@
     max-width: 100%;
     align-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
+    @media screen and (max-width: 840px)
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 .TextContainer {
@@ -73,7 +79,11 @@
     flex: 1;
     width: auto;
     margin: 0px 0px 0px 0px;
-    max-width: 100%;
+    max-width: 45%;
+    @media screen and (max-width: 840px)
+    {
+        max-width: 100%;
+    }
 }
 
 

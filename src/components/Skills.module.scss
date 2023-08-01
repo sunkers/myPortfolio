@@ -1,3 +1,7 @@
+.SkillsContainer {
+    width: 100%;
+}
+
 .skillsWrapper {
     --s-font-ecbb00d0: 'Be Vietnam Pro';
     -webkit-font-smoothing: antialiased;
@@ -21,11 +25,13 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 40px 0px 30px 0px;
     padding: 0px;
     width: 100%;
-    min-width: 85vw;
     max-width: 100%;
+    @media screen and (max-width: 840px) {
+        margin: 40px 0px 30px 0px;
+        min-width: 85vw;
+    }
 }
 
 .skillsTitle {

@@ -1,5 +1,5 @@
 import React from "react"
-import { container, container2, experience, education, skills } from "./Home.module.scss"
+import { container, container2, experience, education, skills, wrapper, Projets } from "./Home.module.scss"
 import Header from "../components/Header"
 import Intro from "../components/Intro"
 import Titre from "../components/Titre"
@@ -12,7 +12,7 @@ import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <div>
+    <div className={wrapper}>
       <Header />
       <div className={container}>
         <Titre />
@@ -25,8 +25,10 @@ export default function Home() {
                 <Education />
                 <Skills />
               </div>
-              <Projects />
-              <Customers />
+              <div className={Projets}>
+                <Projects />
+                <Customers />
+              </div>
             </div>
           </div>
           <Footer />

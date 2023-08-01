@@ -1,11 +1,11 @@
 import React from 'react'
-import { skillsWrapper, skillsTitle, line, line2, skillsRow, skillsSubRow, skillsName, skillsNameText, skillsLevel, skillsLevelText, skillsLineWrapper, skillsLine1, skillsLine2, skillsLine3, skillsLine4} from './Skills.module.scss'
+import { SkillsContainer, skillsWrapper, skillsTitle, line, line2, skillsRow, skillsSubRow, skillsName, skillsNameText, skillsLevel, skillsLevelText, skillsLineWrapper, skillsLine1, skillsLine2, skillsLine3, skillsLine4} from './Skills.module.scss'
 
 const Skills = () => {
   return (
-  <div>
+  <div className={SkillsContainer}>
     <div className={skillsWrapper}>
-      <p className={skillsTitle}>SKILLS</p>
+      <p className={skillsTitle}>COMPETENCES</p>
       <div className={line}></div>
       <div className={line2}></div>
     </div>
