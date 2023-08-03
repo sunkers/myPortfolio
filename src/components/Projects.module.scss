@@ -19,7 +19,7 @@
     height: 150px;
     object-fit: cover;
     object-position: center; 
-    filter: grayscale(100%);
+    filter: grayscale(00%);
 
     @media (max-width: 768px) {
       // height: 200px;
@@ -52,5 +52,30 @@
     justify-content: center;
     align-items: center; 
     text-decoration: none;
-  }
+    transition: 0.5s;
+}
 
+.btn {
+    position: relative;
+    background-color: #444141;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.projectLink:hover {
+    background: linear-gradient(90deg, #ffffff 0%, #eeeeee 50%, #dddddd 75%, #6b6b6b 100%);
+    animation: slidernbw 2.5s ease infinite;
+    color: #000;
+}
+
+@keyframes slidernbw {
+    to {
+        background-position: 18.8vw;
+    }
+}

@@ -109,6 +109,10 @@ h1 {
     letter-spacing: -0.04em;
     margin: 0px 0px 0px 0px;
     font-size: 44px;
+    @media screen and (max-width: 840px)
+    {
+        font-size: 32px;
+    }
 }
 
 .introtitle {
@@ -123,19 +127,18 @@ strong {
     color: inherit;
     display: inline;
     font-family: inherit;
-    font-style: italic;
     font-weight: 700;
 }
 
 .iconItem {
-    color: #333;
+    color: white;
     font-family: sans-serif;
     line-height: 1;
     display: flex;
     align-content: center;
     align-items: center;
     background: rgba(0,0,0,0.0);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     flex: none;
     flex-direction: column;
@@ -145,6 +148,66 @@ strong {
     margin: 0 0 0 5px;
     width: 38px;
     max-width: calc(100% - 5px);
+
+    @media screen and (min-width: 840px)
+    {
+        position: relative;
+        border: 1px solid white;
+        background-color: #000000;
+        overflow: hidden;
+    
+    }
+}
+
+
+.iconItem::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 var(--icon_topRightTriangleSideLength) var(--icon_topRightTriangleSideLength) 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    --icon_topRightTriangleSideLength: 0.9rem;
+}
+
+.iconItem:hover {
+    cursor: pointer;
+}
+
+.iconItem:hover::before {
+    --icon_topRightTriangleSideLength: calc(38px * 2);
+}
+
+.iconItem:focus-visible::before {
+    --icon_topRightTriangleSideLength: calc(38px * 2);
+}
+
+.iconItem > svg {
+    fill: white;
+    width: calc(38px * 0.7);
+    height: calc(38px * 0.7);
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.iconItem:hover {
+     color: black; 
+}
+
+.iconItem:hover > svg {
+    fill: black;
+    transform: rotate(360deg);
+}
+
+.iconItem:focus-visible > svg {
+    fill: black;
+    transform: rotate(360deg);
 }
 
 .iconContainer {
@@ -176,4 +239,8 @@ strong {
     width: auto;
     margin: 20px 0px 0px 0px;
     max-width: 100%;
+    @media screen and (max-width: 840px)
+    {
+        display: none;
+    }
 }

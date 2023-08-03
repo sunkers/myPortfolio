@@ -1,6 +1,6 @@
 import React from 'react'
 import { skillsWrapper, skillsTitle, line, line2} from './Skills.module.scss'
-import { ProjectWrapper, projectImg, projectTech, projectLink, ProjectDiv } from './Projects.module.scss'
+import { ProjectWrapper, projectImg, projectTech, projectLink, ProjectDiv, btn } from './Projects.module.scss'
 import novablocksImage from './../../static/novablocks.png';
 import mytaskmanagerImage from './../../static/taskmanager.png';
 
@@ -21,17 +21,23 @@ const Projects = () => {
       <div className={ProjectWrapper}>
         <img src={novablocksImage} alt="project" className={projectImg}/>
         <div className={projectTech}>Wordpress</div>
-        <a href="http://novablocks-showcase.xyz" className={projectLink}>Nova Blocks</a>
+        <div className={btn}>
+          <a href="http://novablocks-showcase.xyz" className={projectLink}>Nova Blocks</a>
+        </div>
       </div>
       <div className={ProjectWrapper}>
         <img src={mytaskmanagerImage} alt="project" className={projectImg}/>
         <div className={projectTech}>Symfony</div>
-        <a href="http://mytaskmanager.xyz" className={projectLink}>My Task Manager</a>
+        <div className={btn}>
+          <a href="http://mytaskmanager.xyz" className={projectLink}>My Task Manager</a>
+        </div>
       </div>
       <div className={ProjectWrapper}>
-        <img src={novablocksImage} alt="project" className={projectImg}/>
-        <div className={projectTech}>Gatsby / React</div>
-        <a href="http://loicmougin.xyz" className={projectLink}>My Resume</a>
+          <img src={novablocksImage} alt="project" className={projectImg}/>
+          <div className={projectTech}>Gatsby / React</div>
+          <div className={btn}>
+            <a href="http://loicmougin.xyz" className={projectLink}>My Resume</a>
+          </div>
       </div>
     </div>
   )

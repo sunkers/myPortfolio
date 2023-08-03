@@ -476,3 +476,9 @@
     margin: 0px 0px 0px 0px;
 }
 
+.container {
+    @media screen and (min-width: 840px)
+    {
+        margin-bottom: 20px;
+    }
+}

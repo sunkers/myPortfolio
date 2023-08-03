@@ -9,7 +9,7 @@ const Titre = () => {
         <div className={TitleContainer}>
             <div className={TextContainer}>
                 <h1 style={{textTransform: "uppercase"}}>
-                    Developpeur Web Full Stack <strong><u>Passionné.</u></strong>
+                    Developpeur Web  <strong><u>Full Stack</u></strong>
                 </h1>
             </div>
             <div className={iconContainer}>

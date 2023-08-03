@@ -24,7 +24,7 @@ const Intro = () => {
                   <p style={{textTransform: "uppercase"}} className={textTable}>Double Master</p>
                 </div>
             </div>
-            <div className={sendButton}><h3 style={{textTransform: "uppercase"}}>Send Message</h3></div>
+            <button className={sendButton}><h3 style={{textTransform: "uppercase"}}>Send Message</h3></button>
         </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import {experience, experienceTitle, barOne, barTwo, experienceContainer, experienceRow, company, post, postDate, postName, experienceDescription, descriptionText, expTitle} from './Experience.module.scss'
+import {experience, experienceTitle, barOne, barTwo, experienceContainer, experienceRow, company, post, postDate, postName, experienceDescription, descriptionText, expTitle, container} from './Experience.module.scss'
 
 const Experience = () => {
   return (
-  <div>
+  <div className={container}>
     <div className={experience}>
       <p className={experienceTitle}>EXPERIENCE</p>
       <div className={barOne}></div>
