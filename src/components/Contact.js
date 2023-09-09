@@ -1,37 +1,50 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as style from "./Contact.module.scss";
 
 const Contact = () => {
   const [messageStatus, setMessageStatus] = useState(null);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  useEffect(() => {
+    const handleSubmit = async (event) => {
+      event.preventDefault();
 
-    const sender = event.target.sender.value;
-    const email = event.target.email.value;
-    const message = event.target.message.value;
+      const sender = event.target.sender.value;
+      const email = event.target.email.value;
+      const message = event.target.message.value;
 
-    try {
-      const response = await fetch("http://localhost:3001/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ sender, email, message }),
-      });
+      try {
+        const response = await fetch("http://localhost:3001/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ sender, email, message }),
+        });
 
-      if (response.ok) {
-        console.log("Email envoyé avec succès");
-        setMessageStatus("Message envoyé avec succès");
-      } else {
-        console.log("Échec de l'envoi de l'email");
+        if (response.ok) {
+          console.log("Email envoyé avec succès");
+          setMessageStatus("Message envoyé avec succès");
+        } else {
+          console.log("Échec de l'envoi de l'email");
+          setMessageStatus("Erreur lors de l'envoi du message");
+        }
+      } catch (error) {
+        console.error("Il y a eu un problème avec l'envoi de l'email:", error);
         setMessageStatus("Erreur lors de l'envoi du message");
       }
-    } catch (error) {
-      console.error("Il y a eu un problème avec l'envoi de l'email:", error);
-      setMessageStatus("Erreur lors de l'envoi du message");
+    };
+
+    const formElement = document.querySelector("form");
+    if (formElement) {
+      formElement.addEventListener("submit", handleSubmit);
     }
-  };
+
+    return () => {
+      if (formElement) {
+        formElement.removeEventListener("submit", handleSubmit);
+      }
+    };
+  }, []);
 
   return (
     <div className={style.ContactContainer}>
@@ -65,7 +78,7 @@ const Contact = () => {
           </div>
         </div>
         <div className={style.contactFormWrapper}>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className={style.formItem}>
               <label htmlFor="sender">Name:</label>
               <input type="text" name="sender" id="sender" required />
@@ -88,4 +101,5 @@ const Contact = () => {
     </div>
   );
 };
+
 export default Contact;

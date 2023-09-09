@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { skillsWrapper, skillsTitle, line, line2 } from "./Skills.module.scss";
 import {
   ProjectWrapper,
@@ -12,13 +12,26 @@ import novablocksImage from "./../../static/novablocks.png";
 import mytaskmanagerImage from "./../../static/taskmanager.png";
 
 const Projects = () => {
-  window.addEventListener("scroll", function () {
-    let offset = window.pageYOffset;
-    let images = document.querySelectorAll(".projectImg");
-    images.forEach(
-      (img) => (img.style.transform = `translateY(${offset * 0.2}px)`)
-    );
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      let offset = window.pageYOffset;
+      let images = document.querySelectorAll(".projectImg");
+      images.forEach(
+        (img) => (img.style.transform = `translateY(${offset * 0.2}px)`)
+      );
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Nettoyage lors du démontage du composant
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
   return (
     <div className={ProjectDiv}>
       <div className={skillsWrapper}>
