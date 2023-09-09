@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { skillsWrapper, skillsTitle, line, line2 } from "./Skills.module.scss";
-import { Carroussel, wrapper } from "./Customers.module.scss";
+import { Carroussel, wrapper, splideImg } from "./Customers.module.scss";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Splide from "@splidejs/splide";
 
@@ -29,9 +29,25 @@ const Customers = () => {
         <div className="splide" ref={splideRef}>
           <div className="splide__track">
             <ul className="splide__list">
-              <li className="splide__slide">Slide 1</li>
-              <li className="splide__slide">Slide 2</li>
-              <li className="splide__slide">Slide 3</li>
+              <li className="splide__slide">
+                <img
+                  className={splideImg}
+                  src="/ministere-transition-eco.png"
+                  alt="ministere-transition-eco"
+                ></img>
+              </li>
+              <img
+                className={splideImg}
+                src="/ministere-transition-eco.png"
+                alt="ministere-transition-eco"
+              ></img>
+              <li className="splide__slide"></li>
+              <img
+                className={splideImg}
+                src="/ministere-transition-eco.png"
+                alt="ministere-transition-eco"
+              ></img>
+              <li className="splide__slide"></li>
             </ul>
           </div>
         </div>

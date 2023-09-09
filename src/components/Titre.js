@@ -25,13 +25,27 @@ const Titre = () => {
       </div>
       <div className={iconContainer}>
         <div className={iconItem}>
-          <FontAwesomeIcon icon={faTwitter} />
+          <a href="#">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </div>
         <div className={iconItem}>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a
+            href="https://www.linkedin.com/in/lo%C3%AFc-mougin-184b4275/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
         <div className={iconItem}>
-          <FontAwesomeIcon icon={faGithub} />
+          <a
+            href="https://github.com/sunkers"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </div>
       </div>
     </div>

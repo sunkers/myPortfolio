@@ -30,7 +30,12 @@ const Projects = () => {
         <img src={novablocksImage} alt="project" className={projectImg} />
         <div className={projectTech}>Wordpress</div>
         <div className={btn}>
-          <a href="http://novablocks-showcase.xyz" className={projectLink}>
+          <a
+            href="http://novablocks-showcase.xyz"
+            target="_blank"
+            rel="noreferrer"
+            className={projectLink}
+          >
             Nova Blocks
           </a>
         </div>
@@ -39,13 +44,24 @@ const Projects = () => {
         <img src={mytaskmanagerImage} alt="project" className={projectImg} />
         <div className={projectTech}>Symfony</div>
         <div className={btn}>
-          <a href="http://mytaskmanager.xyz" className={projectLink}>
+          <a
+            href="http://mytaskmanager.xyz"
+            target="_blank"
+            rel="noreferrer"
+            className={projectLink}
+          >
             My Task Manager
           </a>
         </div>
       </div>
       <div className={ProjectWrapper}>
-        <img src={novablocksImage} alt="project" className={projectImg} />
+        <img
+          src={novablocksImage}
+          alt="project"
+          target="_blank"
+          rel="noreferrer"
+          className={projectImg}
+        />
         <div className={projectTech}>Gatsby / React</div>
         <div className={btn}>
           <a href="http://loicmougin.xyz" className={projectLink}>

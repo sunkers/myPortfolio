@@ -110,23 +110,21 @@ h2 {
 .link {
   margin: 20px;
   cursor: pointer;
-}
+  img {
+    width: 35px;
+    height: 35px;
+    filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
+    transition: 0.2s;
+    user-select: none;
+  }
+  img:hover {
+    transform: scale(1.1, 1.1);
+  }
 
-img {
-  width: 35px;
-  height: 35px;
-  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
-  transition: 0.2s;
-  user-select: none;
-}
-
-img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-img:active {
-  transform: scale(1.1, 1.1);
-  filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+  img:active {
+    transform: scale(1.1, 1.1);
+    filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+  }
 }
 
 .formItem {
@@ -209,10 +207,9 @@ textarea:valid + label {
 
   .links {
     padding-top: 30px;
-  }
-
-  img {
-    width: 30px;
-    height: 30px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
