@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap");
 
-$header-font: 'Be Vietnam Pro', sans-serif;
-$transition-style: .3s cubic-bezier(.4,.4,0,1);
+$header-font: "Be Vietnam Pro", sans-serif;
+$transition-style: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
 
 .header {
-  --s-font-ecbb00d0: 'Be Vietnam Pro';
+  --s-font-ecbb00d0: "Be Vietnam Pro";
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
   border: 0;
@@ -15,7 +15,7 @@ $transition-style: .3s cubic-bezier(.4,.4,0,1);
   list-style: none;
   padding: 0;
   text-decoration: none;
-  transition: .3s cubic-bezier(.4,.4,0,1);
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
   word-spacing: 1px;
   display: flex;
   pointer-events: all;
@@ -23,7 +23,7 @@ $transition-style: .3s cubic-bezier(.4,.4,0,1);
   z-index: 0;
   align-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.0);
+  background: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-left: 0px solid rgba(0, 0, 0, 0.1);
   border-right: 0px solid rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ $transition-style: .3s cubic-bezier(.4,.4,0,1);
 }
 
 .name {
-  --s-font-ecbb00d0: 'Be Vietnam Pro';
+  --s-font-ecbb00d0: "Be Vietnam Pro";
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
   border: 0;
@@ -50,7 +50,7 @@ $transition-style: .3s cubic-bezier(.4,.4,0,1);
   margin: 0;
   padding: 0;
   text-decoration: none;
-  transition: .3s cubic-bezier(.4,.4,0,1);
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
   word-spacing: 1px;
   flex: none;
   flex-wrap: nowrap;
@@ -103,4 +103,9 @@ $transition-style: .3s cubic-bezier(.4,.4,0,1);
   flex-wrap: nowrap;
   justify-content: center;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

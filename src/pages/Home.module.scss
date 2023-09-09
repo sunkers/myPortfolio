@@ -1,6 +1,6 @@
-.wrapper { 
-  background: #ffffff; 
-  transition: background 0.5s cubic-bezier(0.4, 0.4, 0, 1); 
+.wrapper {
+  background: #ffffff;
+  transition: background 0.5s cubic-bezier(0.4, 0.4, 0, 1);
   align-content: center;
   align-items: center;
   display: flex;
@@ -10,13 +10,11 @@
   justify-content: center;
   width: 1160px;
   max-width: 100%;
-  margin: 0 auto;  /* Ajoutez cette ligne pour centrer l'élément horizontalement */
+  margin: 0 auto; /* Ajoutez cette ligne pour centrer l'élément horizontalement */
 }
 
-
-
 .container {
-  --s-font-ecbb00d0: 'Be Vietnam Pro';
+  --s-font-ecbb00d0: "Be Vietnam Pro";
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
   border: 0;
@@ -27,7 +25,7 @@
   list-style: none;
   padding: 0;
   text-decoration: none;
-  transition: .3s cubic-bezier(.4,.4,0,1);
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
   word-spacing: 1px;
   display: flex;
   pointer-events: all;
@@ -35,7 +33,7 @@
   z-index: 0;
   align-content: flex-start;
   align-items: flex-start;
-  background: rgba(0,0,0,0.0);
+  background: rgba(0, 0, 0, 0);
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -44,213 +42,205 @@
   margin: 60px 20px 0px;
   width: 1160px;
   max-width: calc(100% - 40px);
-    @media screen and (max-width: 840px)
-      {
-          margin: 35px 20px 0px;
-          max-width: calc(100% - 40px);
-      }
+  @media screen and (max-width: 840px) {
+    margin: 35px 20px 0px;
+    max-width: calc(100% - 40px);
   }
+}
 
-  .container2 {
-    --s-font-ecbb00d0: 'Be Vietnam Pro';
-    -webkit-font-smoothing: antialiased;
-    -webkit-backface-visibility: hidden;
-    border: 0;
-    box-sizing: border-box;
-    color: #333;
-    font-family: sans-serif;
-    line-height: 1;
-    list-style: none;
-    text-decoration: none;
-    transition: .3s cubic-bezier(.4,.4,0,1);
-    word-spacing: 1px;
-    display: flex;
-    pointer-events: all;
-    position: relative;
-    z-index: 0;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex: none;
-    flex-direction: row;
+.container2 {
+  --s-font-ecbb00d0: "Be Vietnam Pro";
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
+  word-spacing: 1px;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex: none;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+
+  @media screen and (max-width: 840px) {
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.experience {
+  --s-font-ecbb00d0: "Be Vietnam Pro";
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
+  word-spacing: 1px;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: flex-end;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0);
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 70px;
+  width: auto;
+  max-width: calc(100% - 70px);
+
+  @media screen and (max-width: 840px) {
     margin: 50px 0px 0px 0px;
-    padding: 0px;
-    width: 100%;
     max-width: 100%;
-
-    @media screen and (max-width: 840px)
-      {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 30px 0px 0px 0px;
-        width: 100%;
-        max-width: 100%;
-      }
   }
-  
-  .experience {
-    --s-font-ecbb00d0: 'Be Vietnam Pro';
-    -webkit-font-smoothing: antialiased;
-    -webkit-backface-visibility: hidden;
-    border: 0;
-    box-sizing: border-box;
-    color: #333;
-    font-family: sans-serif;
-    line-height: 1;
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-    transition: .3s cubic-bezier(.4,.4,0,1);
-    word-spacing: 1px;
-    display: flex;
-    pointer-events: all;
-    position: relative;
-    z-index: 0;
-    align-content: flex-end;
-    align-items: flex-end;
-    background: rgba(0,0,0,0.0);
-    flex: 1;
+}
+
+.education {
+  --s-font-ecbb00d0: "Be Vietnam Pro";
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
+  word-spacing: 1px;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: center;
+  margin: 40px 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  gap: 40px;
+
+  @media screen and (max-width: 540px) {
     flex-direction: column;
     flex-wrap: nowrap;
-    height: auto;
-    justify-content: flex-start;
-    margin: 0px 0px 0px 70px;
-    width: auto;
-    max-width: calc(100% - 70px);
-
-    @media screen and (max-width: 840px)
-      {
-        margin: 50px 0px 0px 0px;
-        max-width: 100%;
-      }
-
   }
+}
 
-  .education {
-    --s-font-ecbb00d0: 'Be Vietnam Pro';
-    -webkit-font-smoothing: antialiased;
-    -webkit-backface-visibility: hidden;
-    border: 0;
-    box-sizing: border-box;
-    color: #333;
-    font-family: sans-serif;
-    line-height: 1;
-    list-style: none;
-    text-decoration: none;
-    transition: .3s cubic-bezier(.4,.4,0,1);
-    word-spacing: 1px;
-    display: flex;
-    pointer-events: all;
-    position: relative;
-    z-index: 0;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: auto;
-    justify-content: center;
-    margin: 40px 0px 0px 0px;
-    padding: 0px;
-    width: 100%;
-    max-width: 100%;
-    gap: 40px;
+.skills {
+  --s-font-ecbb00d0: "Be Vietnam Pro";
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
+  word-spacing: 1px;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: flex-start;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0);
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 0px;
+  width: calc(100% - 20px);
+  max-width: calc(50% - 20px);
 
-    @media screen and (max-width: 540px)
-      {
-        flex-direction: column;
-        flex-wrap: nowrap;
-      }
-  }
-
-  .skills {
-    --s-font-ecbb00d0: 'Be Vietnam Pro';
-    -webkit-font-smoothing: antialiased;
-    -webkit-backface-visibility: hidden;
-    border: 0;
-    box-sizing: border-box;
-    color: #333;
-    font-family: sans-serif;
-    line-height: 1;
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-    transition: .3s cubic-bezier(.4,.4,0,1);
-    word-spacing: 1px;
-    display: flex;
-    pointer-events: all;
-    position: relative;
-    z-index: 0;
-    align-content: flex-start;
-    align-items: flex-start;
-    background: rgba(0,0,0,0.0);
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    justify-content: flex-start;
+  @media screen and (max-width: 540px) {
     margin: 0px 0px 0px 0px;
-    width: calc(100% - 20px);
-    max-width: calc(50% - 20px);
-
-    @media screen and (max-width: 540px)
-      {
-        margin: 0px 0px 0px 0px;
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-      }
-
-    @media screen and (max-width: 1140px)
-      {
-        margin: 0px 15px 0px 0px;
-        width: calc(50% - 15px);
-        max-width: calc(50% - 15px);
-      }
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
   }
 
-  .Projets {
-    --s-font-ecbb00d0: 'Be Vietnam Pro';
-    -webkit-font-smoothing: antialiased;
-    -webkit-backface-visibility: hidden;
-    border: 0;
-    box-sizing: border-box;
-    color: #333;
-    font-family: sans-serif;
-    line-height: 1;
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-    transition: .3s cubic-bezier(.4,.4,0,1);
-    word-spacing: 1px;
-    display: flex;
-    pointer-events: all;
-    position: relative;
-    z-index: 0;
-    align-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.0);
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    justify-content: flex-start;
+  @media screen and (max-width: 1140px) {
+    margin: 0px 15px 0px 0px;
+    width: calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
 
+.Projets {
+  --s-font-ecbb00d0: "Be Vietnam Pro";
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1);
+  word-spacing: 1px;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 0;
+  align-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+
+  margin: 0;
+  width: 100%;
+  max-width: calc(50% - 20px);
+
+  @media screen and (max-width: 540px) {
     margin: 0;
     width: 100%;
-    max-width: calc(50% - 20px);
-
-    @media screen and (max-width: 540px) {
-        margin: 0; 
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-    }
-        
-    @media screen and (max-width: 1140px) {
-        margin: 0 15px 0 0; 
-        width: calc(50% - 15px);
-        max-width: calc(50% - 15px);
-    }
+    min-width: 100%;
+    max-width: 100%;
   }
+
+  @media screen and (max-width: 1140px) {
+    margin: 0 15px 0 0;
+    width: calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
