@@ -24,17 +24,26 @@ app.post("/send-email", async (req, res) => {
   });
 
   // Configuration de l'e-mail
-  const mailOptions = {
+  const mailOptionsToAdmin = {
     from: process.env.EMAIL_USER,
     to: [process.env.EMAIL_USER],
     subject: "Message du formulaire de contact",
     text: `Nom: ${sender}\nEmail: ${email}\nMessage: ${message}`,
   };
 
+  const mailOptionsToSender = {
+    from: process.env.EMAIL_USER,
+    to: [email],
+    subject: "Message envoyé",
+    text: `Bonjour ${sender},\n\nMerci pour votre message. Je vous recontacterai dès que possible.\n\nCordialement,\nLoïc Mougin`,
+  };
+
   // Envoyer l'e-mail
   try {
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptionsToAdmin);
     res.status(200).send("Email envoyé à l'administrateur");
+    await transporter.sendMail(mailOptionsToSender);
+    res.status(200).send("Email envoyé à l'expéditeur");
   } catch (error) {
     console.error("Erreur lors de l'envoi de l'e-mail:", error);
     res.status(500).send("Erreur interne du serveur");
