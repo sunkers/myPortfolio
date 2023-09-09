@@ -41,9 +41,8 @@ app.post("/send-email", async (req, res) => {
   // Envoyer l'e-mail
   try {
     await transporter.sendMail(mailOptionsToAdmin);
-    res.status(200).send("Email envoyé à l'administrateur");
     await transporter.sendMail(mailOptionsToSender);
-    res.status(200).send("Email envoyé à l'expéditeur");
+    res.status(200).send("Email envoyé avec succès");
   } catch (error) {
     console.error("Erreur lors de l'envoi de l'e-mail:", error);
     res.status(500).send("Erreur interne du serveur");

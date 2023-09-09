@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import * as style from "./Contact.module.scss";
 
 const Contact = () => {
+  const [messageStatus, setMessageStatus] = useState(null);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -20,11 +22,14 @@ const Contact = () => {
 
       if (response.ok) {
         console.log("Email envoyé avec succès");
+        setMessageStatus("Message envoyé avec succès");
       } else {
         console.log("Échec de l'envoi de l'email");
+        setMessageStatus("Erreur lors de l'envoi du message");
       }
     } catch (error) {
       console.error("Il y a eu un problème avec l'envoi de l'email:", error);
+      setMessageStatus("Erreur lors de l'envoi du message");
     }
   };
 
@@ -75,6 +80,9 @@ const Contact = () => {
             </div>
             <button className={style.submitBtn}>Send</button>
           </form>
+          {messageStatus && (
+            <div className={style.messageStatus}>{messageStatus}</div>
+          )}
         </div>
       </div>
     </div>

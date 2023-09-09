@@ -61,6 +61,18 @@
 
 .contact-links {
   background-color: #dbdbdb;
+  background: radial-gradient(
+      circle at 55% 92%,
+      #e7e7e7 0 12%,
+      transparent 12.2%
+    ),
+    radial-gradient(circle at 94% 72%, #6b6b6b 0 10%, transparent 10.2%),
+    radial-gradient(
+      circle at 20% max(78%, 350px),
+      #7a7a7a 0 7%,
+      transparent 7.2%
+    ),
+    radial-gradient(circle at 0% 0%, #ececec 0 40%, transparent 40.2%), #bebebe;
   border-radius: 10px 0 0 10px;
 }
 
@@ -212,4 +224,10 @@ textarea:valid + label {
       height: 30px;
     }
   }
+}
+.messageStatus {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
 }
