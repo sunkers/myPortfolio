@@ -80,18 +80,18 @@ const Contact = () => {
         <div className={style.contactFormWrapper}>
           <form>
             <div className={style.formItem}>
-              <label htmlFor="sender">Name:</label>
               <input type="text" name="sender" id="sender" required />
+              <label htmlFor="sender">Nom:</label>
             </div>
             <div className={style.formItem}>
-              <label htmlFor="email">Email:</label>
               <input type="text" name="email" id="email" required />
+              <label htmlFor="email">Email:</label>
             </div>
             <div className={style.formItem}>
-              <label htmlFor="message">Message:</label>
               <textarea name="message" id="message" required></textarea>
+              <label htmlFor="message">Message:</label>
             </div>
-            <button className={style.submitBtn}>Send</button>
+            <button className={style.submitBtn}>Envoyer</button>
           </form>
           {messageStatus && (
             <div className={style.messageStatus}>{messageStatus}</div>
