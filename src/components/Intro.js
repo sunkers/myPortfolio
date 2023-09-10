@@ -52,7 +52,7 @@ const Intro = () => {
         </div>
       </div>
       <button className={sendButton} onClick={navigateToContact}>
-        <h3 style={{ textTransform: "uppercase" }}>Send Message</h3>
+        <h3 style={{ textTransform: "uppercase" }}>Envoyer un message</h3>
       </button>
     </div>
   );
