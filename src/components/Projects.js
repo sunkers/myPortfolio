@@ -10,6 +10,7 @@ import {
 } from "./Projects.module.scss";
 import novablocksImage from "./../../static/novablocks.png";
 import mytaskmanagerImage from "./../../static/taskmanager.png";
+import myPortfolioImage from "./../../static/myPortfolio.png";
 
 const Projects = () => {
   useEffect(() => {
@@ -44,7 +45,7 @@ const Projects = () => {
         <div className={projectTech}>Wordpress</div>
         <div className={btn}>
           <a
-            href="http://novablocks-showcase.xyz"
+            href="https://novablocks-showcase.xyz"
             target="_blank"
             rel="noreferrer"
             className={projectLink}
@@ -58,7 +59,7 @@ const Projects = () => {
         <div className={projectTech}>Symfony</div>
         <div className={btn}>
           <a
-            href="http://mytaskmanager.xyz"
+            href="https://mytaskmanager.xyz"
             target="_blank"
             rel="noreferrer"
             className={projectLink}
@@ -69,7 +70,7 @@ const Projects = () => {
       </div>
       <div className={ProjectWrapper}>
         <img
-          src={novablocksImage}
+          src={myPortfolioImage}
           alt="project"
           target="_blank"
           rel="noreferrer"
@@ -77,7 +78,7 @@ const Projects = () => {
         />
         <div className={projectTech}>Gatsby / React</div>
         <div className={btn}>
-          <a href="http://loicmougin.xyz" className={projectLink}>
+          <a href="https://loicmougin.xyz" className={projectLink}>
             My Resume
           </a>
         </div>
