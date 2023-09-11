@@ -86,6 +86,21 @@ const Skills = () => {
           <div className={skillsLine4}></div>
         </div>
       </div>
+      <div className={skillsRow}>
+        <div className={skillsSubRow}>
+          <div className={skillsName}>
+            <p className={skillsNameText}>
+              Déploiement <br></br>[AWS / Netlify]
+            </p>
+          </div>
+          <div className={skillsLevel}>
+            <p className={skillsLevelText}>60%</p>
+          </div>
+        </div>
+        <div className={skillsLineWrapper}>
+          <div className={skillsLine3}></div>
+        </div>
+      </div>
     </div>
   );
 };

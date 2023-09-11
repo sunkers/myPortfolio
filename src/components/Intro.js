@@ -22,7 +22,7 @@ const Intro = () => {
       <p className={myName}>Loïc Mougin</p>
       <div className={myDescription}>
         Développeur web full-stack aguerri, spécialisé en PHP, JS, TS, Angular,
-        Symfony. Réputé pour ma rapidité d'execution, mon efficacité et une
+        Symfony. Réputé pour ma rapidité d'exécution, mon efficacité et une
         bonne approche logique, je suis toujours prêt pour de nouveaux défis
       </div>
       <div className={myTable}>
