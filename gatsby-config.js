@@ -8,5 +8,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  siteMetadata: {
+    title: `Loïc Mougin`,
+  },
   plugins: [`gatsby-plugin-sass`],
-}
+};
