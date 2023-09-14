@@ -25,7 +25,9 @@ const Contact = () => {
           console.log("Email envoyé avec succès");
           setMessageStatus("Message envoyé avec succès");
         } else {
-          console.log("Échec de l'envoi de l'email");
+          console.log(
+            "Échec de l'envoi de l'email. Veuillez employer un autre moyen pour me contacter."
+          );
           setMessageStatus("Erreur lors de l'envoi du message");
         }
       } catch (error) {
