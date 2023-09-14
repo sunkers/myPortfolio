@@ -11,9 +11,13 @@ const Contact = () => {
       const sender = event.target.sender.value;
       const email = event.target.email.value;
       const message = event.target.message.value;
+      const url =
+        process.env.REACT === "production"
+          ? "https://loicmougin.xyz/.netlify/functions/send-email"
+          : "http://localhost:3001/send-email";
 
       try {
-        const response = await fetch("http://localhost:3001/send-email", {
+        const response = await fetch(url, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
